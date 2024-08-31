@@ -1,0 +1,21 @@
+.Home {
+    margin-top: 10vh;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.oval-button {
+    background-color: gainsboro;
+    margin: 10px;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 25%;
+}
+
+.oval-button:hover {
+    transform: scale(1.1);
+}
