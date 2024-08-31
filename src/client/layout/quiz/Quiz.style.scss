@@ -1,7 +1,43 @@
 .Quiz {
-    margin-top: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+.quiz-container {
+    width: 50%;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.q-label, .l-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+}
+
+.q-label label{
+    margin: 10px;
+}
+
+.l-label label{
+    margin: 10px;
+}
+
+.q-label {
+    color: purple;
+}
+
+.l-label {
+    color: red;
 }

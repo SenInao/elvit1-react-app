@@ -46,7 +46,6 @@ class WS {
     }
 
     messageHandler(data, ws) {
-        console.log(data)
         for (let i = 0; i < questions.length; i++) {
             if (data.question === questions[i].question) {
                 ws.send(JSON.stringify({correct: questions[i].correct}))

@@ -1,6 +1,9 @@
 class WS {
-    constructor(setQuestion) {
+    constructor(setQuestion, setIndex, life, setLife) {
         this.connect()
+        this.life = life
+        this.setLife = setLife
+        this.setIndex = setIndex
         this.setQuestion = setQuestion
         this.callback = null
         this.questions
@@ -35,6 +38,8 @@ class WS {
             if (answer === data.correct) {
                 setCorrect(true)
             } else {
+                this.life--
+                this.setLife(this.life)
                 setCorrect(false)
             }
 
@@ -62,6 +67,7 @@ class WS {
         }
 
         this.questionIndex++;
+        this.setIndex(this.questionIndex)
         this.setQuestion(this.questions[this.questionIndex])
         setCorrect(null)
     }
