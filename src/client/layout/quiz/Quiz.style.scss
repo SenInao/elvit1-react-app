@@ -17,6 +17,13 @@
     justify-content: space-between;
 }
 
+.info-end {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .q-label, .l-label {
     display: flex;
     flex-direction: row;

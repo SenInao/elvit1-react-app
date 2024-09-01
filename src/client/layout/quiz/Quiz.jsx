@@ -16,6 +16,21 @@ const Quiz = () => {
         setWs(websock)
     }, [])
 
+    if (questionIndex >= 10) {
+        return (
+            <div className="Quiz">
+                <h1>You survived!</h1>
+            </div>
+        )
+    }
+
+    if (life <= 0) {
+        return (
+            <div className="Quiz">
+                <h1>You died!</h1>
+            </div>
+        )
+    }
 
     if (!question) {
         return (
