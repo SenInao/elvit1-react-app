@@ -1,128 +1,263 @@
 const questions = [
     {
-        question: "What is the capital of France?",
-        alternatives : ["Paris", "London", "Rome", "Berlin"],
-        correct : "Paris"
+        question: "Which gas do plants absorb from the atmosphere during photosynthesis?",
+        alternatives : ["Nitrogen", "Oxygen", "Hydrogen", "Carbon Dioxide"],
+        correct : "Carbon Dioxide"
     },
     {
-        question: "What is the largest planet in our solar system?",
-        alternatives : ["Earth", "Mars", "Jupiter", "Venus"],
-        correct : "Jupiter"
+        question: "What is the largest mammal in the world?",
+        alternatives : ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+        correct : "Blue Whale"
     },
     {
-        question: "Who wrote the play 'Romeo and Juliet'?",
-        alternatives : ["William Shakespeare", "Charles Dickens", "Mark Twain", "J.K. Rowling"],
-        correct : "William Shakespeare"
+        question: "Who developed the theory of evolution by natural selection?",
+        alternatives : ["Louis Pasteur", "Gregor Mendel", "Albert Einstein", "Charles Darwin"],
+        correct : "Charles Darwin"
     },
     {
-        question: "What is the chemical symbol for water?",
-        alternatives : ["H2O", "O2", "CO2", "HO2"],
-        correct : "H2O"
+        question: "Which metal is liquid at room temperature?",
+        alternatives : ["Silver", "Gold", "Mercury", "Copper"],
+        correct : "Mercury"
     },
     {
-        question: "Which country is known as the Land of the Rising Sun?",
-        alternatives : ["Japan", "China", "India", "South Korea"],
-        correct : "Japan"
+        question: "What is the most abundant gas in the Earth's atmosphere?",
+        alternatives : ["Oxygen", "Carbon Dioxide", "Helium", "Nitrogen"],
+        correct : "Nitrogen"
     },
     {
-        question: "What year did the Titanic sink?",
-        alternatives : ["1912", "1905", "1920", "1898"],
-        correct : "1912"
+        question: "What is the tallest mountain in the world?",
+        alternatives : ["K2", "Mount Everest", "Kangchenjunga", "Lhotse"],
+        correct : "Mount Everest"
     },
     {
-        question: "Who painted the Mona Lisa?",
-        alternatives : ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Claude Monet"],
-        correct : "Leonardo da Vinci"
+        question: "Which organ in the human body is responsible for pumping blood?",
+        alternatives : ["Liver", "Heart", "Lungs", "Kidney"],
+        correct : "Heart"
     },
     {
-        question: "What is the smallest prime number?",
-        alternatives : ["2", "1", "3", "5"],
-        correct : "2"
+        question: "What is the chemical symbol for gold?",
+        alternatives : ["Au", "Ag", "Fe", "Pb"],
+        correct : "Au"
     },
     {
-        question: "What element does 'O' represent on the periodic table?",
-        alternatives : ["Oxygen", "Gold", "Osmium", "Oganesson"],
-        correct : "Oxygen"
+        question: "Who was the first President of the United States?",
+        alternatives : ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams"],
+        correct : "George Washington"
     },
     {
-        question: "In which continent is the Amazon Rainforest located?",
-        alternatives : ["South America", "Africa", "Asia", "Australia"],
-        correct : "South America"
+        question: "Which planet in our solar system is closest to the Sun?",
+        alternatives : ["Mercury", "Venus", "Earth", "Mars"],
+        correct : "Mercury"
     },
     {
-        question: "What is the longest river in the world?",
-        alternatives : ["Amazon River", "Nile River", "Yangtze River", "Mississippi River"],
-        correct : "Nile River"
+        question: "What is the largest desert in the world?",
+        alternatives : ["Sahara", "Antarctica", "Gobi", "Arabian"],
+        correct : "Antarctica"
     },
     {
-        question: "Which element has the atomic number 1?",
-        alternatives : ["Hydrogen", "Helium", "Oxygen", "Carbon"],
-        correct : "Hydrogen"
+        question: "Who invented the light bulb?",
+        alternatives : ["Thomas Edison", "Nikola Tesla", "Alexander Graham Bell", "Benjamin Franklin"],
+        correct : "Thomas Edison"
+    },
+        {
+        question: "What is the smallest planet in our solar system?",
+        alternatives : ["Mars", "Mercury", "Earth", "Venus"],
+        correct : "Mercury"
     },
     {
-        question: "Who was the first person to walk on the moon?",
-        alternatives : ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Michael Collins"],
-        correct : "Neil Armstrong"
+        question: "Which country gifted the Statue of Liberty to the United States?",
+        alternatives : ["France", "Germany", "Italy", "Spain"],
+        correct : "France"
     },
     {
-        question: "Which planet is known as the Red Planet?",
-        alternatives : ["Mars", "Venus", "Saturn", "Mercury"],
-        correct : "Mars"
+        question: "What is the currency of the United Kingdom?",
+        alternatives : ["Euro", "Dollar", "Yen", "Pound Sterling"],
+        correct : "Pound Sterling"
     },
     {
-        question: "What is the hardest natural substance on Earth?",
-        alternatives : ["Diamond", "Gold", "Iron", "Quartz"],
-        correct : "Diamond"
+        question: "Which continent is known as the Dark Continent?",
+        alternatives : ["Africa", "Asia", "South America", "Australia"],
+        correct : "Africa"
     },
     {
-        question: "What is the main ingredient in guacamole?",
-        alternatives : ["Avocado", "Tomato", "Onion", "Cucumber"],
-        correct : "Avocado"
+        question: "Who wrote the novel '1984'?",
+        alternatives : ["George Orwell", "J.R.R. Tolkien", "Aldous Huxley", "F. Scott Fitzgerald"],
+        correct : "George Orwell"
     },
     {
-        question: "Who discovered penicillin?",
-        alternatives : ["Alexander Fleming", "Marie Curie", "Isaac Newton", "Albert Einstein"],
-        correct : "Alexander Fleming"
+        question: "What is the largest organ in the human body?",
+        alternatives : ["Liver", "Skin", "Heart", "Brain"],
+        correct : "Skin"
     },
     {
-        question: "Which ocean is the largest by surface area?",
-        alternatives : ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
-        correct : "Pacific Ocean"
+        question: "What is the capital city of Canada?",
+        alternatives : ["Toronto", "Ottawa", "Vancouver", "Montreal"],
+        correct : "Ottawa"
     },
     {
-        question: "What language is primarily spoken in Brazil?",
-        alternatives : ["Portuguese", "Spanish", "French", "English"],
-        correct : "Portuguese"
+        question: "Which planet is known as the Morning Star?",
+        alternatives : ["Venus", "Mars", "Jupiter", "Saturn"],
+        correct : "Venus"
     },
     {
-        question: "In which year did World War II end?",
-        alternatives : ["1945", "1918", "1963", "1939"],
-        correct : "1945"
-    },
-    {
-        question: "What is the capital of Australia?",
-        alternatives : ["Canberra", "Sydney", "Melbourne", "Perth"],
-        correct : "Canberra"
-    },
-    {
-        question: "What is the largest bone in the human body?",
-        alternatives : ["Femur", "Tibia", "Humerus", "Skull"],
+        question: "What is the longest bone in the human body?",
+        alternatives : ["Humerus", "Tibia", "Femur", "Fibula"],
         correct : "Femur"
     },
     {
-        question: "Which famous scientist developed the theory of relativity?",
-        alternatives : ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Stephen Hawking"],
+        question: "Who was the first female Prime Minister of the United Kingdom?",
+        alternatives : ["Theresa May", "Margaret Thatcher", "Angela Merkel", "Indira Gandhi"],
+        correct : "Margaret Thatcher"
+    },
+    {
+        question: "Which ocean is the smallest by surface area?",
+        alternatives : ["Indian Ocean", "Arctic Ocean", "Atlantic Ocean", "Southern Ocean"],
+        correct : "Arctic Ocean"
+    },
+    {
+        question: "What is the most populous country in the world?",
+        alternatives : ["United States", "India", "China", "Indonesia"],
+        correct : "China"
+    },
+    {
+        question: "Which element is known as the building block of life?",
+        alternatives : ["Carbon", "Hydrogen", "Oxygen", "Nitrogen"],
+        correct : "Carbon"
+    },
+    {
+        question: "Which artist is known for painting the ceiling of the Sistine Chapel?",
+        alternatives : ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
+        correct : "Michelangelo"
+    },
+    {
+        question: "What is the hardest mineral on the Mohs scale?",
+        alternatives : ["Diamond", "Quartz", "Corundum", "Topaz"],
+        correct : "Diamond"
+    },
+    {
+        question: "Which country is home to the Great Barrier Reef?",
+        alternatives : ["Australia", "Indonesia", "Brazil", "South Africa"],
+        correct : "Australia"
+    },
+    {
+        question: "What is the main language spoken in Argentina?",
+        alternatives : ["Portuguese", "Spanish", "French", "Italian"],
+        correct : "Spanish"
+    },
+    {
+        question: "Who is known as the father of modern physics?",
+        alternatives : ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Niels Bohr"],
         correct : "Albert Einstein"
     },
     {
-        question: "What is the national currency of Japan?",
-        alternatives : ["Yen", "Won", "Yuan", "Dollar"],
-        correct : "Yen"
+        question: "What is the boiling point of water in Celsius?",
+        alternatives : ["100°C", "50°C", "0°C", "200°C"],
+        correct : "100°C"
     },
     {
-        question: "What is the smallest country in the world?",
-        alternatives : ["Vatican City", "Monaco", "San Marino", "Liechtenstein"],
-        correct : "Vatican City"
+        question: "Which planet has the most moons?",
+        alternatives : ["Jupiter", "Saturn", "Mars", "Neptune"],
+        correct : "Jupiter"
+    },
+    {
+        question: "Which country has the most UNESCO World Heritage Sites?",
+        alternatives: ["China", "Italy", "Spain", "France"],
+        correct: "Italy"
+    },
+    {
+        question: "What is the chemical formula for table salt?",
+        alternatives: ["NaCl", "H2O", "CO2", "KCl"],
+        correct: "NaCl"
+    },
+    {
+        question: "Who was the first woman to win a Nobel Prize?",
+        alternatives: ["Marie Curie", "Rosalind Franklin", "Dorothy Hodgkin", "Ada Lovelace"],
+        correct: "Marie Curie"
+    },
+    {
+        question: "Which U.S. state is known as the 'Sunshine State'?",
+        alternatives: ["Florida", "California", "Arizona", "Texas"],
+        correct: "Florida"
+    },
+    {
+        question: "Who is the author of the 'Harry Potter' series?",
+        alternatives: ["J.K. Rowling", "George R.R. Martin", "J.R.R. Tolkien", "Suzanne Collins"],
+        correct: "J.K. Rowling"
+    },
+    {
+        question: "What is the highest mountain in Africa?",
+        alternatives: ["Mount Kenya", "Mount Elgon", "Mount Kilimanjaro", "Mount Meru"],
+        correct: "Mount Kilimanjaro"
+    },
+    {
+        question: "Which planet has a day longer than its year?",
+        alternatives: ["Venus", "Mercury", "Mars", "Jupiter"],
+        correct: "Venus"
+    },
+    {
+        question: "What is the most spoken language in the world by number of native speakers?",
+        alternatives: ["Spanish", "Mandarin Chinese", "English", "Hindi"],
+        correct: "Mandarin Chinese"
+    },
+    {
+        question: "What is the capital of Egypt?",
+        alternatives: ["Cairo", "Alexandria", "Giza", "Luxor"],
+        correct: "Cairo"
+    },
+    {
+        question: "Which element is used in pencils?",
+        alternatives: ["Graphite", "Lead", "Carbon", "Iron"],
+        correct: "Graphite"
+    },
+    {
+        question: "Which organ in the human body produces insulin?",
+        alternatives: ["Pancreas", "Liver", "Kidneys", "Stomach"],
+        correct: "Pancreas"
+    },
+    {
+        question: "What is the largest island in the world?",
+        alternatives: ["Greenland", "New Guinea", "Borneo", "Madagascar"],
+        correct: "Greenland"
+    },
+    {
+        question: "Which U.S. president is on the $20 bill?",
+        alternatives: ["Andrew Jackson", "Thomas Jefferson", "Abraham Lincoln", "Alexander Hamilton"],
+        correct: "Andrew Jackson"
+    },
+    {
+        question: "Who wrote 'Pride and Prejudice'?",
+        alternatives: ["Jane Austen", "Charlotte Brontë", "Emily Brontë", "Mary Shelley"],
+        correct: "Jane Austen"
+    },
+    {
+        question: "What is the most common blood type in humans?",
+        alternatives: ["O+", "A+", "B+", "AB+"],
+        correct: "O+"
+    },
+    {
+        question: "Which vitamin is known as the sunshine vitamin?",
+        alternatives: ["Vitamin D", "Vitamin C", "Vitamin A", "Vitamin E"],
+        correct: "Vitamin D"
+    },
+    {
+        question: "Which ancient civilization built the Machu Picchu?",
+        alternatives: ["Inca", "Maya", "Aztec", "Olmec"],
+        correct: "Inca"
+    },
+    {
+        question: "What is the largest muscle in the human body?",
+        alternatives: ["Gluteus Maximus", "Quadriceps", "Pectoralis Major", "Biceps"],
+        correct: "Gluteus Maximus"
+    },
+    {
+        question: "Which country is the largest producer of coffee?",
+        alternatives: ["Brazil", "Colombia", "Vietnam", "Ethiopia"],
+        correct: "Brazil"
+    },
+    {
+        question: "What is the main gas found in the air we breathe?",
+        alternatives: ["Nitrogen", "Oxygen", "Carbon Dioxide", "Argon"],
+        correct: "Nitrogen"
     }
 ];
 

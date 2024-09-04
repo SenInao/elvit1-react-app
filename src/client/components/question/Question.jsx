@@ -11,7 +11,9 @@ const Question = ({question, ws}) => {
     const buttons = [alt1, alt2, alt3, alt4]
 
     function buttonClick(alt) {
-        ws.checkIfCorrect(question.question, alt, setCorrect, buttons)
+        if (correct === null) {
+            ws.checkIfCorrect(question.question, alt, setCorrect, buttons)
+        }
     }
 
     return (

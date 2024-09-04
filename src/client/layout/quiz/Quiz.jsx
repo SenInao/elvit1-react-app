@@ -4,31 +4,46 @@ import { FaHeartBroken } from "react-icons/fa";
 import WS from "../../ws/WS"
 import "./Quiz.style.scss"
 import {useEffect, useState} from "react"
+import {useNavigate} from "react-router-dom"
 
 const Quiz = () => {
     const [question, setQuestion] = useState()
     const [questionIndex, setIndex] = useState(0)
     const [life, setLife] = useState(3)
     const [ws, setWs] = useState(null)
+    const navigate = useNavigate()
 
     useEffect(() => {
         const websock = new WS(setQuestion, setIndex, life, setLife)
         setWs(websock)
     }, [])
 
-    if (questionIndex >= 10) {
+    const endText = (text) => {
         return (
             <div className="Quiz">
-                <h1>You survived!</h1>
+                <h1>{text}</h1>
+                <div className="q-label">
+                    <CiCircleQuestion />
+                    <label>{questionIndex}/10</label>
+                </div>
+                <div className="l-label">
+                    <FaHeartBroken/>
+                    <label>{life}</label>
+                </div>
+                <button className="oval-button" onClick={() => {navigate("/")}}>Back</button>
             </div>
+        )
+    }
+
+    if (questionIndex >= 10) {
+        return (
+            endText("You Survived!")
         )
     }
 
     if (life <= 0) {
         return (
-            <div className="Quiz">
-                <h1>You died!</h1>
-            </div>
+            endText("You Died!")
         )
     }
 
@@ -38,6 +53,10 @@ const Quiz = () => {
                 <h1>Loading Questions</h1>
             </div>
         )
+    }
+
+    if(ws.ws.readyState !== 1) {
+        navigate("/")
     }
 
     return (
