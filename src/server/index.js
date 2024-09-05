@@ -3,6 +3,8 @@ const path = require('path');
 const express = require('express');
 const WS = require("./ws-1")
 
+require("./db.js")
+
 const ws = new WS()
 
 const clientApp = express();
