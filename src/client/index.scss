@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1 : #343131;
+    --color2 : #A04747;
+    --color3: #D8A25E;
+    --color4: #EEDF7A;
+
+    margin: 0;
+    padding: 0;
+
+    font-family:'Courier New', Courier, monospace;
+    background-color: var(--color1);
+}

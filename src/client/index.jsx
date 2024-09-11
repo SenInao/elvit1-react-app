@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './layout/Home';
 import Quiz from './layout/quiz/Quiz'
+import Fagdag from './layout/fagdagen/Fagdag'
+
+import "./index.scss"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,6 +13,7 @@ ReactDOM.render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/quiz' element={<Quiz />} />
+        <Route path='/fagdagen' element={<Fagdag />} />
         <Route
           path='*'
           element={

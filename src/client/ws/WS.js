@@ -46,11 +46,11 @@ class WS {
 
             for (let i = 0; i < buttons.length; i++) {
                 if (buttons[i].current.innerText === answer && answer !== data.correct) {
-                    buttons[i].current.style.background = "red"
+                    buttons[i].current.style.background = "var(--color2)"
                 }
 
                 if (data.correct === buttons[i].current.innerText) {
-                    buttons[i].current.style.background = "lightgreen"
+                    buttons[i].current.style.background = "green"
                 }
             }
         }
@@ -63,7 +63,7 @@ class WS {
 
     nextQuestion(setCorrect, buttons) {
         for (let i = 0; i < buttons.length; i++) {
-            buttons[i].current.style.background = "gainsboro"
+            buttons[i].current.style.background = "var(--color3)"
         }
 
         this.questionIndex++;

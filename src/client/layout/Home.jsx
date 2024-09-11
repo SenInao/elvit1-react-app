@@ -7,8 +7,8 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <h1>Common knowledge quiz</h1>
-      <button className="oval-button" onClick={() => {navigate("/quiz")}}>start</button>
+      <h1>My Projects</h1>
+      <a onClick={() => navigate("/quiz")}>Take Quiz</a>
     </div>
   );
 };

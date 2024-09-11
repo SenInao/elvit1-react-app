@@ -1,0 +1,26 @@
+.Fagdag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color2);
+    margin: 10vh;
+}
+
+.Fagdag h1 {
+    margin: 10px;
+}
+
+.Fagdag img {
+    border-radius: 20px;
+
+    width: 300px;
+    height: 300px;
+}
+
+#nesteSide {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+}

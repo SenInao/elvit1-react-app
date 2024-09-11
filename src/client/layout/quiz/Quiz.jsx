@@ -64,7 +64,7 @@ const Quiz = () => {
             <div className="quiz-container">
                 <div className="info">
                     <div className="q-label">
-                        <CiCircleQuestion />
+                        <CiCircleQuestion size={45}/>
                         <label>{questionIndex}/10</label>
                     </div>
                     <div className="l-label">
