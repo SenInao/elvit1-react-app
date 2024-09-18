@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './layout/Home';
 import Quiz from './layout/quiz/Quiz'
 import Fagdag from './layout/fagdagen/Fagdag'
+import Snake from "./layout/snake/Snake"
 
 import "./index.scss"
 
@@ -14,6 +15,7 @@ ReactDOM.render(
         <Route path='/' element={<Home />} />
         <Route path='/quiz' element={<Quiz />} />
         <Route path='/fagdagen' element={<Fagdag />} />
+        <Route path='/snake' element={<Snake/>} />
         <Route
           path='*'
           element={
