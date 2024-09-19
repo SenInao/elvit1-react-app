@@ -9,6 +9,7 @@ const Home = () => {
     <div className="Home">
       <h1>My Projects</h1>
       <a onClick={() => navigate("/quiz")}>Take Quiz</a>
+      <a onClick={() => navigate("/snake")}>Take Quiz</a>
     </div>
   );
 };
