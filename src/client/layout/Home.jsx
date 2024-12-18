@@ -7,9 +7,10 @@ const Home = () => {
 
   return (
     <div className="Home">
-      <h1>My Projects</h1>
-      <a onClick={() => navigate("/quiz")}>Take Quiz</a>
-      <a onClick={() => navigate("/snake")}>Take Quiz</a>
+      <h1>Mine prosjekter</h1>
+      <a onClick={() => navigate("/quiz")}>Ta Quiz</a>
+      <a onClick={() => navigate("/snake")}>Snake</a>
+      <a href="https://skole.senharald.com">Facebook clone</a>
     </div>
   );
 };

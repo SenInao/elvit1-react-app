@@ -1,233 +1,233 @@
 const questions = [
     {
-        question: "Which gas do plants absorb from the atmosphere during photosynthesis?",
-        alternatives : ["Nitrogen", "Hydrogen", "Oxygen", "Carbon Dioxide"],
-        correct : "Carbon Dioxide"
+        question: "Hvilken gass absorberer planter fra atmosfæren under fotosyntese?",
+        alternatives: ["Nitrogen", "Hydrogen", "Oksygen", "Karbon Dioxid"],
+        correct: "Karbon Dioxid"
     },
     {
-        question: "What is the largest mammal in the world?",
-        alternatives : ["Hippopotamus", "Elephant", "Blue Whale", "Giraffe"],
-        correct : "Blue Whale"
+        question: "Hva er det største pattedyr i verden?",
+        alternatives: ["Flodhest", "Elefant", "Blåhval", "Giraff"],
+        correct: "Blåhval"
     },
     {
-        question: "Who developed the theory of evolution by natural selection?",
-        alternatives : ["Louis Pasteur", "Albert Einstein", "Charles Darwin", "Gregor Mendel"],
-        correct : "Charles Darwin"
+        question: "Hvem utviklet teorien om evolusjon ved naturlig utvalg?",
+        alternatives: ["Louis Pasteur", "Albert Einstein", "Charles Darwin", "Gregor Mendel"],
+        correct: "Charles Darwin"
     },
     {
-        question: "Which metal is liquid at room temperature?",
-        alternatives : ["Silver", "Gold", "Copper", "Mercury"],
-        correct : "Mercury"
+        question: "Hvilket metall er flytende ved romtemperatur?",
+        alternatives: ["Sølv", "Gull", "Kobber", "Kvikksølv"],
+        correct: "Kvikksølv"
     },
     {
-        question: "What is the most abundant gas in the Earth's atmosphere?",
-        alternatives : ["Oxygen", "Helium", "Nitrogen", "Carbon Dioxide"],
-        correct : "Nitrogen"
+        question: "Hva er den mest tallrike gassen i jordens atmosfære?",
+        alternatives: ["Oksygen", "Helium", "Nitrogen", "Karbon Dioxid"],
+        correct: "Nitrogen"
     },
     {
-        question: "What is the tallest mountain in the world?",
-        alternatives : ["Mount Everest", "K2", "Lhotse", "Kangchenjunga"],
-        correct : "Mount Everest"
+        question: "Hva er det høyeste fjellet i verden?",
+        alternatives: ["Mount Everest", "K2", "Lhotse", "Kangchenjunga"],
+        correct: "Mount Everest"
     },
     {
-        question: "Which organ in the human body is responsible for pumping blood?",
-        alternatives : ["Liver", "Heart", "Kidney", "Lungs"],
-        correct : "Heart"
+        question: "Hvilket organ i menneskekroppen er ansvarlig for å pumpe blod?",
+        alternatives: ["Lever", "Hjerte", "Nyre", "Lunger"],
+        correct: "Hjerte"
     },
     {
-        question: "What is the chemical symbol for gold?",
-        alternatives : ["Fe", "Ag", "Au", "Pb"],
-        correct : "Au"
+        question: "Hva er det kjemiske symbolet for gull?",
+        alternatives: ["Fe", "Ag", "Au", "Pb"],
+        correct: "Au"
     },
     {
-        question: "Who was the first President of the United States?",
-        alternatives : ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
-        correct : "George Washington"
+        question: "Hvem var den første presidenten i USA?",
+        alternatives: ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+        correct: "George Washington"
     },
     {
-        question: "Which planet in our solar system is closest to the Sun?",
-        alternatives : ["Mars", "Venus", "Mercury", "Earth"],
-        correct : "Mercury"
+        question: "Hvilken planet i vårt solsystem er nærmest solen?",
+        alternatives: ["Mars", "Venus", "Merkur", "Jorden"],
+        correct: "Merkur"
     },
     {
-        question: "What is the largest desert in the world?",
-        alternatives : ["Sahara", "Gobi", "Antarctica", "Arabian"],
-        correct : "Antarctica"
+        question: "Hva er den største ørkenen i verden?",
+        alternatives: ["Sahara", "Gobi", "Antarktis", "Arabisk"],
+        correct: "Antarktis"
     },
     {
-        question: "Who invented the light bulb?",
-        alternatives : ["Alexander Graham Bell", "Nikola Tesla", "Benjamin Franklin", "Thomas Edison"],
-        correct : "Thomas Edison"
+        question: "Hvem oppfant lyspæren?",
+        alternatives: ["Alexander Graham Bell", "Nikola Tesla", "Benjamin Franklin", "Thomas Edison"],
+        correct: "Thomas Edison"
     },
     {
-        question: "What is the smallest planet in our solar system?",
-        alternatives : ["Mars", "Earth", "Venus", "Mercury"],
-        correct : "Mercury"
+        question: "Hva er den minste planeten i vårt solsystem?",
+        alternatives: ["Mars", "Jorden", "Venus", "Merkur"],
+        correct: "Merkur"
     },
     {
-        question: "Which country gifted the Statue of Liberty to the United States?",
-        alternatives : ["Spain", "Germany", "France", "Italy"],
-        correct : "France"
+        question: "Hvilket land ga Statuen av friheten til USA?",
+        alternatives: ["Spania", "Tyskland", "Frankrike", "Italia"],
+        correct: "Frankrike"
     },
     {
-        question: "What is the currency of the United Kingdom?",
-        alternatives : ["Dollar", "Euro", "Pound Sterling", "Yen"],
-        correct : "Pound Sterling"
+        question: "Hva er valutaen i Storbritannia?",
+        alternatives: ["Dollar", "Euro", "Pund Sterling", "Yen"],
+        correct: "Pund Sterling"
     },
     {
-        question: "Which continent is known as the Dark Continent?",
-        alternatives : ["Asia", "Australia", "South America", "Africa"],
-        correct : "Africa"
+        question: "Hvilket kontinent er kjent som det mørke kontinent?",
+        alternatives: ["Asia", "Australia", "Sør-Amerika", "Afrika"],
+        correct: "Afrika"
     },
     {
-        question: "Who wrote the novel '1984'?",
-        alternatives : ["George Orwell", "Aldous Huxley", "J.R.R. Tolkien", "F. Scott Fitzgerald"],
-        correct : "George Orwell"
+        question: "Hvem skrev romanen '1984'?",
+        alternatives: ["George Orwell", "Aldous Huxley", "J.R.R. Tolkien", "F. Scott Fitzgerald"],
+        correct: "George Orwell"
     },
     {
-        question: "What is the largest organ in the human body?",
-        alternatives : ["Brain", "Heart", "Skin", "Liver"],
-        correct : "Skin"
+        question: "Hva er det største organet i menneskekroppen?",
+        alternatives: ["Hjerne", "Hjerte", "Hud", "Lever"],
+        correct: "Hud"
     },
     {
-        question: "What is the capital city of Canada?",
-        alternatives : ["Montreal", "Ottawa", "Vancouver", "Toronto"],
-        correct : "Ottawa"
+        question: "Hva er hovedstaden i Canada?",
+        alternatives: ["Montreal", "Ottawa", "Vancouver", "Toronto"],
+        correct: "Ottawa"
     },
     {
-        question: "Which planet is known as the Morning Star?",
-        alternatives : ["Venus", "Mars", "Jupiter", "Saturn"],
-        correct : "Venus"
+        question: "Hvilken planet er kjent som Morgenstjernen?",
+        alternatives: ["Venus", "Mars", "Jupiter", "Saturn"],
+        correct: "Venus"
     },
     {
-        question: "What is the longest bone in the human body?",
-        alternatives : ["Tibia", "Femur", "Humerus", "Fibula"],
-        correct : "Femur"
+        question: "Hva er den lengste beinet i menneskekroppen?",
+        alternatives: ["Tibia", "Femur", "Humerus", "Fibula"],
+        correct: "Femur"
     },
     {
-        question: "Who was the first female Prime Minister of the United Kingdom?",
-        alternatives : ["Theresa May", "Angela Merkel", "Margaret Thatcher", "Indira Gandhi"],
-        correct : "Margaret Thatcher"
+        question: "Hvem var den første kvinnelige statsministeren i Storbritannia?",
+        alternatives: ["Theresa May", "Angela Merkel", "Margaret Thatcher", "Indira Gandhi"],
+        correct: "Margaret Thatcher"
     },
     {
-        question: "Which ocean is the smallest by surface area?",
-        alternatives : ["Indian Ocean", "Arctic Ocean", "Southern Ocean", "Atlantic Ocean"],
-        correct : "Arctic Ocean"
+        question: "Hvilket hav er det minste etter overflateareal?",
+        alternatives: ["Indiske hav", "Arktiske hav", "Sørlige hav", "Atlanterhavet"],
+        correct: "Arktiske hav"
     },
     {
-        question: "What is the most populous country in the world?",
-        alternatives : ["China", "India", "United States", "Indonesia"],
-        correct : "China"
+        question: "Hva er det mest folkerike landet i verden?",
+        alternatives: ["Kina", "India", "USA", "Indonesia"],
+        correct: "Kina"
     },
     {
-        question: "Which element is known as the building block of life?",
-        alternatives : ["Hydrogen", "Oxygen", "Carbon", "Nitrogen"],
-        correct : "Carbon"
+        question: "Hvilket element er kjent som livets byggestein?",
+        alternatives: ["Hydrogen", "Oksygen", "Karbon", "Nitrogen"],
+        correct: "Karbon"
     },
     {
-        question: "Which artist is known for painting the ceiling of the Sistine Chapel?",
-        alternatives : ["Donatello", "Michelangelo", "Leonardo da Vinci", "Raphael"],
-        correct : "Michelangelo"
+        question: "Hvilken kunstner er kjent for å male taket i det sixtinske kapell?",
+        alternatives: ["Donatello", "Michelangelo", "Leonardo da Vinci", "Raphael"],
+        correct: "Michelangelo"
     },
     {
-        question: "What is the hardest mineral on the Mohs scale?",
-        alternatives : ["Corundum", "Diamond", "Quartz", "Topaz"],
-        correct : "Diamond"
+        question: "Hva er det hardeste mineralet på Mohs skala?",
+        alternatives: ["Korund", "Diamant", "Kvarts", "Topas"],
+        correct: "Diamant"
     },
     {
-        question: "Which country is home to the Great Barrier Reef?",
-        alternatives : ["Australia", "Brazil", "South Africa", "Indonesia"],
-        correct : "Australia"
+        question: "Hvilket land er hjem til Great Barrier Reef?",
+        alternatives: ["Australia", "Brasil", "Sør-Afrika", "Indonesia"],
+        correct: "Australia"
     },
     {
-        question: "What is the main language spoken in Argentina?",
-        alternatives : ["French", "Italian", "Spanish", "Portuguese"],
-        correct : "Spanish"
+        question: "Hva er det viktigste språket som snakkes i Argentina?",
+        alternatives: ["Fransk", "Italiensk", "Spansk", "Portugisisk"],
+        correct: "Spansk"
     },
     {
-        question: "Who is known as the father of modern physics?",
-        alternatives : ["Niels Bohr", "Albert Einstein", "Galileo Galilei", "Isaac Newton"],
-        correct : "Albert Einstein"
+        question: "Hvem er kjent som far til moderne fysikk?",
+        alternatives: ["Niels Bohr", "Albert Einstein", "Galileo Galilei", "Isaac Newton"],
+        correct: "Albert Einstein"
     },
     {
-        question: "What is the boiling point of water in Celsius?",
-        alternatives : ["100°C", "0°C", "200°C", "50°C"],
-        correct : "100°C"
+        question: "Hva er kokepunktet for vann i Celsius?",
+        alternatives: ["100°C", "0°C", "200°C", "50°C"],
+        correct: "100°C"
     },
     {
-        question: "Which planet has the most moons?",
-        alternatives : ["Neptune", "Mars", "Jupiter", "Saturn"],
-        correct : "Jupiter"
+        question: "Hvilken planet har flest måner?",
+        alternatives: ["Neptun", "Mars", "Jupiter", "Saturn"],
+        correct: "Jupiter"
     },
     {
-        question: "Which country has the most UNESCO World Heritage Sites?",
-        alternatives: ["Spain", "Italy", "China", "France"],
-        correct : "Italy"
+        question: "Hvilket land har flest UNESCOs verdensarvsteder?",
+        alternatives: ["Spania", "Italia", "Kina", "Frankrike"],
+        correct: "Italia"
     },
     {
-        question: "What is the chemical formula for table salt?",
+        question: "Hva er den kjemiske formelen for bordsalt?",
         alternatives: ["KCl", "NaCl", "CO2", "H2O"],
         correct: "NaCl"
     },
     {
-        question: "Who was the first woman to win a Nobel Prize?",
+        question: "Hvem var den første kvinnen som vant en Nobelpris?",
         alternatives: ["Rosalind Franklin", "Marie Curie", "Ada Lovelace", "Dorothy Hodgkin"],
         correct: "Marie Curie"
     },
     {
-        question: "Which U.S. state is known as the 'Sunshine State'?",
+        question: "Hvilken amerikansk stat er kjent som 'Solskinnsstaten'?",
         alternatives: ["Texas", "Arizona", "Florida", "California"],
         correct: "Florida"
     },
     {
-        question: "Who is the author of the 'Harry Potter' series?",
+        question: "Hvem er forfatteren av 'Harry Potter'-serien?",
         alternatives: ["J.R.R. Tolkien", "J.K. Rowling", "Suzanne Collins", "George R.R. Martin"],
-        correct : "J.K. Rowling"
+        correct: "J.K. Rowling"
     },
     {
-        question: "What is the highest mountain in Africa?",
+        question: "Hva er det høyeste fjellet i Afrika?",
         alternatives: ["Mount Kilimanjaro", "Mount Meru", "Mount Kenya", "Mount Elgon"],
-        correct : "Mount Kilimanjaro"
+        correct: "Mount Kilimanjaro"
     },
     {
-        question: "Which planet has a day longer than its year?",
-        alternatives: ["Jupiter", "Mars", "Mercury", "Venus"],
-        correct : "Venus"
+        question: "Hvilken planet har en dag som er lengre enn året?",
+        alternatives: ["Jupiter", "Mars", "Merkur", "Venus"],
+        correct: "Venus"
     },
     {
-        question: "What is the most spoken language in the world by number of native speakers?",
-        alternatives: ["Hindi", "Mandarin Chinese", "Spanish", "English"],
-        correct : "Mandarin Chinese"
+        question: "Hva er det mest talte språket i verden etter antall morsmål?",
+        alternatives: ["Hindi", "Mandarin-kinesisk", "Spansk", "Engelsk"],
+        correct: "Mandarin-kinesisk"
     },
     {
-        question: "What is the capital of Egypt?",
-        alternatives: ["Giza", "Cairo", "Luxor", "Alexandria"],
-        correct : "Cairo"
+        question: "Hva er hovedstaden i Egypt?",
+        alternatives: ["Giza", "Kairo", "Luxor", "Alexandria"],
+        correct: "Kairo"
+    },
+        {
+        question: "Hvilket element brukes i blyanter?",
+        alternatives: ["Jern", "Bly", "Grafitt", "Karbon"],
+        correct: "Grafitt"
     },
     {
-        question: "Which element is used in pencils?",
-        alternatives : ["Iron", "Lead", "Graphite", "Carbon"],
-        correct : "Graphite"
+        question: "Hvilket organ i menneskekroppen produserer insulin?",
+        alternatives: ["Mage", "Bukspyttkjertel", "Lever", "Nyre"],
+        correct: "Bukspyttkjertel"
     },
     {
-        question: "Which organ in the human body produces insulin?",
-        alternatives: ["Stomach", "Pancreas", "Liver", "Kidneys"],
-        correct : "Pancreas"
+        question: "Hva er den største øya i verden?",
+        alternatives: ["Ny-Guinea", "Grønland", "Madagaskar", "Borneo"],
+        correct: "Grønland"
     },
     {
-        question: "What is the largest island in the world?",
-        alternatives: ["New Guinea", "Greenland", "Madagascar", "Borneo"],
-        correct : "Greenland"
-    },
-    {
-        question: "Which U.S. president is on the $20 bill?",
+        question: "Hvilken amerikansk president er på $20-seddelen?",
         alternatives: ["Alexander Hamilton", "Abraham Lincoln", "Thomas Jefferson", "Andrew Jackson"],
         correct: "Andrew Jackson"
     },
     {
-        question: "Who wrote 'Pride and Prejudice'?",
-        alternatives: ["Emily Brontë", "Jane Austen", "Charlotte Brontë"],
-        correct: "Jane Austen",
+        question: "Hvem skrev 'Stolthet og fordom'?",
+        alternatives: ["Emily Brontë", "Jane Austen", "Charlotte Brontë", "Bill Gates"],
+        correct: "Jane Austen"
     }
 ];
 

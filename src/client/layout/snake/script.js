@@ -8,7 +8,7 @@ class Part {
         this.xvel = 0
         this.yvel = 0
         this.next = null
-        this.vel = game.cellWidth/15
+        this.vel = game.cellWidth/10
     }
 
     move() {
@@ -19,18 +19,10 @@ class Part {
         }
     }
 
-    updateNextVel(xvel, yvel) {
-        if (this.next) {
-            this.next.updateNextVel(this.xvel, this.yvel);
-        }
-        this.xvel = xvel;
-        this.yvel = yvel;
-    }
-
     draw() {
         this.game.context.beginPath()
         this.game.context.fillStyle = "blue"
-        this.game.context.arc(this.drawX, this.drawY, this.game.cellWidth/3, 0, 2*Math.PI)
+        this.game.context.arc(this.drawX, this.drawY, this.game.cellWidth/2, 0, 2*Math.PI)
         this.game.context.fill()
 
         if (this.next) {
@@ -59,35 +51,40 @@ class Fruit {
             let x = Math.round(Math.random() * (this.game.cells-1)+1)
             let y = Math.round(Math.random() * (this.game.cells-1)+1)
 
+            let valid = true
+
             for (let i = 0; i < this.game.snakeBod.length; i++) {
                 if (this.game.snakeBod.x === x && this.game.snakeBod.y === y) {
-                    continue
+                    valid = false
+                    break
                 }
             }
-            return {x: x, y: y}
+            if (valid) {
+                return {x: x, y: y}
+            }
         }
     }
 
     draw() {
         this.game.context.beginPath()
         this.game.context.fillStyle = "red"
-        this.game.context.arc(this.pos.x * this.game.cellWidth - this.game.cellWidth/2, this.pos.y * this.game.cellWidth - this.game.cellWidth/2, this.game.cellWidth/3.5, 0, 2*Math.PI)
+        this.game.context.arc(this.pos.x * this.game.cellWidth - this.game.cellWidth/2, this.pos.y * this.game.cellWidth - this.game.cellWidth/2, this.game.cellWidth/3, 0, 2*Math.PI)
         this.game.context.fill()
     }
 }
 
 class Game {
     constructor(canvas) {
-        this.cells = 13
+        this.cells = 17
         this.canvas = canvas
         this.resize()
         this.context = canvas.getContext("2d")
         this.addEventListeners()
-        this.nextUpdate = null
+        this.nextUpdate = []
         this.updateAllowed = true
+        this.firstMove = true
         
-        this.snake = new Part(this, 7, 7)
-        this.snake.xvel = 1
+        this.snake = new Part(this, 9, 9)
         this.snakeBod = [this.snake]
 
         this.fruit = new Fruit(this)
@@ -99,25 +96,33 @@ class Game {
         document.addEventListener("keydown", (e) => {
             if (e.keyCode === 38) {
                 if (this.snake.yvel === 1) return
-                this.nextUpdate = [0, -1]
+                if (this.nextUpdate.length < 2) {
+                    this.nextUpdate.push([0, -1])
+                }
             } else if (e.keyCode === 37) {
                 if (this.snake.xvel === 1) return
-                this.nextUpdate = [-1, 0]
+                if (this.nextUpdate.length < 2) {
+                    this.nextUpdate.push([-1, 0])
+                }
             } else if (e.keyCode === 39) {
                 if (this.snake.xvel === -1) return
-                this.nextUpdate = [1, 0]
+                if (this.nextUpdate.length < 2) {
+                    this.nextUpdate.push([1, 0])
+                }
             } else if (e.keyCode === 40) {
                 if (this.snake.yvel === -1) return
-                this.nextUpdate = [0, 1]
+                if (this.nextUpdate.length < 2) {
+                    this.nextUpdate.push([0, 1])
+                }
             }
         })
     }
 
     start() {
         if (this.snakeDied()) {
-            this.snake = new Part(this, 7, 7)
-            this.snake.xvel = 1
+            this.snake = new Part(this, 9, 9)
             this.snakeBod = [this.snake]
+            this.firstMove = true
         }
 
         this.draw()
@@ -130,6 +135,13 @@ class Game {
         }else if (Math.round(this.snake.drawY) === Math.round((this.snake.y + 1) * this.cellWidth-this.cellWidth/2)
             || Math.round(this.snake.drawY) === Math.round((this.snake.y - 1) * this.cellWidth-this.cellWidth/2)) {
             this.updateVel()
+        }
+
+        if (this.firstMove && this.nextUpdate.length) {
+            this.snake.xvel = this.nextUpdate[0][0]
+            this.snake.yvel = this.nextUpdate[0][1]
+            this.firstMove = false
+            this.nextUpdate.shift()
         }
 
         if (this.fruitEaten()) {
@@ -176,14 +188,13 @@ class Game {
             this.snakeBod[i].x += this.snakeBod[i].xvel
             this.snakeBod[i].y += this.snakeBod[i].yvel
             if (i === 0) {
-                if (!this.nextUpdate) {
+                if (!this.nextUpdate.length) {
                     return
                 }
                 
-                this.snakeBod[i].xvel = this.nextUpdate[0]
-                this.snakeBod[i].yvel = this.nextUpdate[1]
-
-                this.nextUpdate = null
+                this.snakeBod[i].xvel = this.nextUpdate[0][0]
+                this.snakeBod[i].yvel = this.nextUpdate[0][1]
+                this.nextUpdate.shift()
                 return
             }
             this.snakeBod[i].xvel = this.snakeBod[i - 1].xvel

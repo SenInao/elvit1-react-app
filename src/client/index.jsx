@@ -20,7 +20,7 @@ ReactDOM.render(
           path='*'
           element={
             <main style={{ padding: '1rem' }}>
-              <p>There&apos;s nothing here!</p>
+              <p>Ingen ting her!</p>
             </main>
           }
         />

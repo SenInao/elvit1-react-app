@@ -27,7 +27,7 @@ const Question = ({question, ws}) => {
             </div>
             {correct !== null ? (
                 <div>
-                    <button className="oval-button" onClick={() => (ws.nextQuestion(setCorrect, buttons))}>Next</button>
+                    <button className="oval-button" onClick={() => (ws.nextQuestion(setCorrect, buttons))}>Neste</button>
                 </div>
             ) : null}
         </div>

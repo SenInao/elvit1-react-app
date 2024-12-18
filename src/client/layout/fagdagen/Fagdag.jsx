@@ -1,6 +1,7 @@
 import "./Fagdag.scss"
 import {useState, useRef, useEffect} from "react"
 import image from './Fagdag.jpg'
+import PageTitle from "../../components/pageTitle/PageTitle"
 
 const Fagdag = () => {
     const [poeng, setPoeng] = useState(0)
@@ -39,6 +40,7 @@ const Fagdag = () => {
 
     return (
         <div className="Fagdag">
+            <PageTitle title={"59 spørsmål"}/>
             <h3>Poeng: {poeng}</h3>
             <h1>Hvor på elvebakken er dette?</h1>
             <img src={image} alt="Bilde av elvebakken"/>

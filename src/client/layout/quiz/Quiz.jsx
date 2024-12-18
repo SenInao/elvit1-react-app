@@ -37,20 +37,20 @@ const Quiz = () => {
 
     if (questionIndex >= 10) {
         return (
-            endText("You Survived!")
+            endText("Du overlevde!")
         )
     }
 
     if (life <= 0) {
         return (
-            endText("You Died!")
+            endText("Du døde!")
         )
     }
 
     if (!question) {
         return (
             <div className="Quiz">
-                <h1>Loading Questions</h1>
+                <h1>Laster spørsmål</h1>
             </div>
         )
     }
